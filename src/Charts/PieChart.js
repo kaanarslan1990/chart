@@ -14,7 +14,7 @@ const PieChart = () => {
 
     var baseUrl ="https://api.coinranking.com/v2/coins/?limit=10"
     var proxyUrl ="https://cors-anywhere.herokuapp.com/"
-    var apiKey = "coinrankingc3f873b54b1515509b02f7af129f4d9b56083bf0d96ceb03"
+    var apiKey = process.env.REACT_APP_API_KEY;
 
     useEffect(() => {
         const fetchCoins = async () => {
